@@ -1,48 +1,5 @@
 # Student Management System
 
-A Django-based Student Management System with token Authentication, PostgreSQL database, and RESTful APIs to manage students and teachers.
-
----
-
-1. Register User
-Endpoint:
-POST /register/
-Description:
-Register a new user (student or teacher).
-
-Request Body:
-{
-    "username": "teacher",
-    "password": "12345678",
-    "user_type": "teacher"
-}
-
-Response:
-{
-    "token": "ee689960f40e9615715bbec573406e4b9b50ba84"
-}
-
-2. Login User
-Endpoint:
-POST /login/
-
-Description:
-Login with a username and password to receive an authentication token.
-
-Request Body:
-{
-    "username": "teacher5",
-    "password": "12345678"
-}
-
-
-Here’s a full README.md file for your project with API details, including inputs and outputs.
-
-README.md
-markdown
-Copy code
-# Student Management System
-
 A Django-based Student Management System using PostgreSQL with RESTful APIs for managing teachers and students. Includes authentication and CRUD operations.
 
 ---
@@ -65,7 +22,7 @@ A Django-based Student Management System using PostgreSQL with RESTful APIs for 
     venv\Scripts\activate      # For Windows
     Install dependencies:
 
-3. **Install dependencies::**
+3. **Install dependencies:**
 pip install -r requirements.txt
 Configure the PostgreSQL database:
 
@@ -96,9 +53,6 @@ Request Body:
     "user_type": "teacher"
 }
 Response:
-
-json
-Copy code
 {
     "token": "ee689960f40e9615715bbec573406e4b9b50ba84"
 }
